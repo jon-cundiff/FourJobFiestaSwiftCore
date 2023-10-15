@@ -7,13 +7,13 @@
 
 import Foundation
 
-enum JobType: String {
-    case wind = "WIND"
-    case water = "WATER"
-    case fire = "FIRE"
-    case earth = "EARTH"
-    case classic = "CLASSIC"
-    case team750 = "TEAM 750"
-    case teamNo750 = "TEAM NO 750"
-    case advance =  "ADVANCE"
+enum JobType {
+    case wind
+    case water
+    case fire
+    case earth
+    case classic
+    case team750
+    case teamNo750
+    case advance
 }

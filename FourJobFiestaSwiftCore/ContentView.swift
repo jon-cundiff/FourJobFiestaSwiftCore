@@ -10,10 +10,10 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            JobView()
-            JobView()
-            JobView()
-            JobView()
+            JobView(crystal: .wind)
+            JobView(crystal: .water)
+            JobView(crystal: .fire)
+            JobView(crystal: .earth)
         }
     }
 }

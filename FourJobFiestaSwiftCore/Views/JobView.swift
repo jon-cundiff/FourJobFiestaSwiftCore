@@ -8,13 +8,28 @@
 import SwiftUI
 
 struct JobView: View {
+    let crystal: Crystals
     var body: some View {
         ZStack {
+            Image(getImage())
         }
         
+    }
+    
+    func getImage() -> ImageResource {
+        return switch crystal {
+        case .wind:
+                .Crystals.wind
+        case .water:
+                .Crystals.water
+        case .fire:
+                .Crystals.fire
+        case .earth:
+                .Crystals.earth
+        }
     }
 }
 
 #Preview {
-    JobView()
+    JobView(crystal: .wind)
 }
