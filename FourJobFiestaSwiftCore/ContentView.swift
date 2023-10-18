@@ -8,12 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var jobStatusService = JobStatusService(jobStatuses: nil)
+    
     var body: some View {
-        VStack {
-            JobView(crystal: .wind)
-            JobView(crystal: .water)
-            JobView(crystal: .fire)
-            JobView(crystal: .earth)
+        HStack {
+            ForEach(jobStatusService.jobStatuses) { jobStatus in
+                JobView(
+                    crystal: jobStatus.crystal,
+                    job: jobStatus.job?.name,
+                    character: nil
+                ).onTapGesture {
+                    print(jobStatus.id)
+                    jobStatusService.handleTouch(touchId: jobStatus.id)
+                }
+                
+            }
+        
+//            JobView(crystal: .wind, job: "Black Mage", character: "Bartz").onTapGesture {
+//                print("HIIII")
+//            }
         }
     }
 }

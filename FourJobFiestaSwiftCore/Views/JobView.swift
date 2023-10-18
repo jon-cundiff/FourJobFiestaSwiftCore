@@ -8,11 +8,28 @@
 import SwiftUI
 
 struct JobView: View {
-    let crystal: Crystals
+    let crystal: Crystal
+    let job: String?
+    let character: String?
     var body: some View {
-        ZStack {
+        ZStackLayout (alignment: Alignment(horizontal: .center, vertical: .bottom)) {
             Image(getImage())
-        }
+            if let jobString = job {
+                VStack () {
+                    if let charString = character {
+                        Image("Jobs/\(charString)-\(jobString)")
+                            .offset(x:0, y:30)
+                    }
+                    
+                    Text(jobString)
+                        .frame(maxWidth: .infinity)
+                        .padding(10)
+                        .background()
+                        .backgroundStyle(.red)
+                }.frame(maxWidth: .infinity)
+            }
+        }.fixedSize()
+        
         
     }
     
@@ -31,5 +48,5 @@ struct JobView: View {
 }
 
 #Preview {
-    JobView(crystal: .wind)
+    JobView(crystal: .earth, job: "Bard", character: "Bartz")
 }

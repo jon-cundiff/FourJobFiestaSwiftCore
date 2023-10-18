@@ -18,7 +18,9 @@
 		83A14B1E2ADAF11D0062F490 /* JobType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A14B1D2ADAF11D0062F490 /* JobType.swift */; };
 		83A14B212ADB33980062F490 /* Jobs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A14B202ADB33980062F490 /* Jobs.swift */; };
 		83A14C2C2ADB8A330062F490 /* JobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A14C2B2ADB8A330062F490 /* JobView.swift */; };
-		83A14D442ADC8AAF0062F490 /* Crystals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A14D432ADC8AAF0062F490 /* Crystals.swift */; };
+		83A14D442ADC8AAF0062F490 /* Crystal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A14D432ADC8AAF0062F490 /* Crystal.swift */; };
+		83A14D462ADE1F500062F490 /* JobStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A14D452ADE1F500062F490 /* JobStatus.swift */; };
+		83A14D4B2ADE3CD60062F490 /* JobStatusService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A14D4A2ADE3CD60062F490 /* JobStatusService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +57,9 @@
 		83A14B202ADB33980062F490 /* Jobs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jobs.swift; sourceTree = "<group>"; };
 		83A14C292ADB77B30062F490 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		83A14C2B2ADB8A330062F490 /* JobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobView.swift; sourceTree = "<group>"; };
-		83A14D432ADC8AAF0062F490 /* Crystals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crystals.swift; sourceTree = "<group>"; };
+		83A14D432ADC8AAF0062F490 /* Crystal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crystal.swift; sourceTree = "<group>"; };
+		83A14D452ADE1F500062F490 /* JobStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobStatus.swift; sourceTree = "<group>"; };
+		83A14D4A2ADE3CD60062F490 /* JobStatusService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobStatusService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 		83A14AEC2ADAEE940062F490 /* FourJobFiestaSwiftCore */ = {
 			isa = PBXGroup;
 			children = (
+				83A14D492ADE3CBB0062F490 /* Observables */,
 				83A14C2A2ADB8A1D0062F490 /* Views */,
 				83A14B1F2ADAF1820062F490 /* Util */,
 				83A14B182ADAEEB30062F490 /* Model */,
@@ -149,7 +154,8 @@
 			children = (
 				83A14B192ADAEEC40062F490 /* Job.swift */,
 				83A14B1D2ADAF11D0062F490 /* JobType.swift */,
-				83A14D432ADC8AAF0062F490 /* Crystals.swift */,
+				83A14D432ADC8AAF0062F490 /* Crystal.swift */,
+				83A14D452ADE1F500062F490 /* JobStatus.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,6 +174,14 @@
 				83A14C2B2ADB8A330062F490 /* JobView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		83A14D492ADE3CBB0062F490 /* Observables */ = {
+			isa = PBXGroup;
+			children = (
+				83A14D4A2ADE3CD60062F490 /* JobStatusService.swift */,
+			);
+			path = Observables;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,11 +315,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				83A14C2C2ADB8A330062F490 /* JobView.swift in Sources */,
+				83A14D462ADE1F500062F490 /* JobStatus.swift in Sources */,
 				83A14AF02ADAEE940062F490 /* ContentView.swift in Sources */,
 				83A14B1E2ADAF11D0062F490 /* JobType.swift in Sources */,
 				83A14B1A2ADAEEC40062F490 /* Job.swift in Sources */,
-				83A14D442ADC8AAF0062F490 /* Crystals.swift in Sources */,
+				83A14D442ADC8AAF0062F490 /* Crystal.swift in Sources */,
 				83A14B212ADB33980062F490 /* Jobs.swift in Sources */,
+				83A14D4B2ADE3CD60062F490 /* JobStatusService.swift in Sources */,
 				83A14AEE2ADAEE940062F490 /* FourJobFiestaSwiftCoreApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

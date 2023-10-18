@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Crystals {
+enum Crystal {
     case wind
     case water
     case fire
