@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "66B18277-429C-49EF-B53E-B64352000B50"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6F242733-008F-40C7-8CBE-E734D9CF3FF4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FourJobFiestaSwiftCore/Util/Jobs.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "9"
+            endingLineNumber = "9"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "6F242733-008F-40C7-8CBE-E734D9CF3FF4 - 14d951a3f08f5a1f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FourJobFiestaSwiftCore.Jobs.deinit"
+                  moduleName = "FourJobFiestaSwiftCore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joncundiff/Dev/swift/FourJobFiestaSwiftCore/FourJobFiestaSwiftCore/Util/Jobs.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "6F242733-008F-40C7-8CBE-E734D9CF3FF4 - bc2fde6e79646ea0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FourJobFiestaSwiftCore.Jobs.__deallocating_deinit"
+                  moduleName = "FourJobFiestaSwiftCore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joncundiff/Dev/swift/FourJobFiestaSwiftCore/FourJobFiestaSwiftCore/Util/Jobs.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "6F242733-008F-40C7-8CBE-E734D9CF3FF4 - 6ed4606a809125d4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FourJobFiestaSwiftCore.Jobs.__allocating_init() -&gt; FourJobFiestaSwiftCore.Jobs"
+                  moduleName = "FourJobFiestaSwiftCore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joncundiff/Dev/swift/FourJobFiestaSwiftCore/FourJobFiestaSwiftCore/Util/Jobs.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "6F242733-008F-40C7-8CBE-E734D9CF3FF4 - f8cf3e1d55bdb8a0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FourJobFiestaSwiftCore.Jobs.init() -&gt; FourJobFiestaSwiftCore.Jobs"
+                  moduleName = "FourJobFiestaSwiftCore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joncundiff/Dev/swift/FourJobFiestaSwiftCore/FourJobFiestaSwiftCore/Util/Jobs.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

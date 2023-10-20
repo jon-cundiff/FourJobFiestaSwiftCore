@@ -9,5 +9,5 @@ import Foundation
 
 struct Job {
     var name: String
-    var tags: [JobType] = []
+    var tags: [JobTag] = []
 }
