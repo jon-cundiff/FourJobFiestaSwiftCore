@@ -21,6 +21,7 @@
 		83A14D442ADC8AAF0062F490 /* Crystal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A14D432ADC8AAF0062F490 /* Crystal.swift */; };
 		83A14D462ADE1F500062F490 /* JobStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A14D452ADE1F500062F490 /* JobStatus.swift */; };
 		83A14D4B2ADE3CD60062F490 /* JobStatusService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A14D4A2ADE3CD60062F490 /* JobStatusService.swift */; };
+		83A14D4D2AE216270062F490 /* RunType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A14D4C2AE216270062F490 /* RunType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		83A14D432ADC8AAF0062F490 /* Crystal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crystal.swift; sourceTree = "<group>"; };
 		83A14D452ADE1F500062F490 /* JobStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobStatus.swift; sourceTree = "<group>"; };
 		83A14D4A2ADE3CD60062F490 /* JobStatusService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobStatusService.swift; sourceTree = "<group>"; };
+		83A14D4C2AE216270062F490 /* RunType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 				83A14B1D2ADAF11D0062F490 /* JobTag.swift */,
 				83A14D432ADC8AAF0062F490 /* Crystal.swift */,
 				83A14D452ADE1F500062F490 /* JobStatus.swift */,
+				83A14D4C2AE216270062F490 /* RunType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				83A14C2C2ADB8A330062F490 /* JobView.swift in Sources */,
 				83A14D462ADE1F500062F490 /* JobStatus.swift in Sources */,
 				83A14AF02ADAEE940062F490 /* ContentView.swift in Sources */,
+				83A14D4D2AE216270062F490 /* RunType.swift in Sources */,
 				83A14B1E2ADAF11D0062F490 /* JobTag.swift in Sources */,
 				83A14B1A2ADAEEC40062F490 /* Job.swift in Sources */,
 				83A14D442ADC8AAF0062F490 /* Crystal.swift in Sources */,
