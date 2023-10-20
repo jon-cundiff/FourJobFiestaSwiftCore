@@ -19,9 +19,12 @@ private func getInitialStatuses() -> [JobStatus] {
 @MainActor
 class JobStatusService: ObservableObject {
     @Published var jobStatuses: [JobStatus]
+    @Published var tags: [JobTag]
+    private var jobs = Jobs.buildJobs()
     
     init(jobStatuses: [JobStatus]?) {
         self.jobStatuses = jobStatuses ?? getInitialStatuses()
+        self.tags = []
     }
     
     func handleTouch(touchId: UUID) {
@@ -32,11 +35,31 @@ class JobStatusService: ObservableObject {
             return
         }
         var newJobStatuses = self.jobStatuses
-        print(newJobStatuses[jobStatusIndex])
+        var processTags = tags
+        processTags.append(getTagFromCrystal(crystal: newJobStatuses[jobStatusIndex].crystal))
+        
         if (newJobStatuses[jobStatusIndex].job == nil) {
-            newJobStatuses[jobStatusIndex].job = Job(name: "Knight", tags: [.wind, .teamNo750, .classic])
+            newJobStatuses[jobStatusIndex].job = rollJob(tags: processTags)
         }
         
         self.jobStatuses = newJobStatuses
+    }
+    
+    private func getTagFromCrystal(crystal: Crystal) -> JobTag {
+        return switch (crystal) {
+            case .wind: .wind
+            case .water: .water
+            case .fire: .fire
+            case .earth: .earth
+        }
+    }
+    
+    private func rollJob(tags: [JobTag]) -> Job {
+        let filteredJobs = Jobs.getJobsOfTypes(jobs: jobs, tags: tags)
+        guard let randomJob = filteredJobs.randomElement() else {
+            return Job(name: "Freelancer")
+        }
+        
+        return randomJob
     }
 }

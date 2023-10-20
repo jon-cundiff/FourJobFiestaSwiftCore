@@ -34,8 +34,8 @@ class Jobs {
             Job(name: "Samurai", tags: [.earth, .teamNo750]),
             Job(name: "Chemist", tags: [.earth, .team750]),
             
-            Job(name: "Freelancer"),
-            Job(name: "Mime"),
+            Job(name: "Freelancer", tags:[.all]),
+            Job(name: "Mime", tags: [.all]),
             
             Job(name: "Cannoneer", tags: [.advance]),
             Job(name: "Oracle", tags: [.advance]),
@@ -43,9 +43,12 @@ class Jobs {
         ]
     }
     
-    static func getJobsOfType(jobs: [Job], type: JobType) -> [Job] {
+    static func getJobsOfTypes(jobs: [Job], tags: [JobTag]) -> [Job] {
         return jobs.filter { job in
-            return job.tags.contains(type)
+            return tags.allSatisfy { tag in
+                job.tags.contains(tag)
+                || job.tags.contains(.all)
+            }
         }
     }
 }

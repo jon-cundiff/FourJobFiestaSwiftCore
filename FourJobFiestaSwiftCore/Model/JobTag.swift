@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum JobType {
+enum JobTag {
     case wind
     case water
     case fire
@@ -16,4 +16,5 @@ enum JobType {
     case team750
     case teamNo750
     case advance
+    case all
 }
