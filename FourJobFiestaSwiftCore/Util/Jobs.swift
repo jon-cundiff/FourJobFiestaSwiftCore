@@ -8,6 +8,8 @@
 import Foundation
 
 class Jobs {
+    static let crystalTagBase: [JobTag] = [.wind, .water, .fire, .earth]
+    
     static func buildJobs() -> [Job] {
         return [
             Job(name: "Knight", tags: [.wind, .teamNo750, .classic, .onion, .onion1]),
@@ -43,18 +45,37 @@ class Jobs {
         ]
     }
     
-    static func getJobsOfTypes(jobs: [Job], tags: [JobTag], selectedJobs: [Job], meteorSelected: Bool) -> [Job] {
+    static func separateCrystalTags(tags: [JobTag]) -> ([JobTag],[JobTag]) {
+        var crystalTags: [JobTag] = []
+        var otherTags: [JobTag] = []
+        
+        tags.forEach { tag in
+            if (crystalTagBase.contains(tag)) {
+                crystalTags.append(tag)
+            } else {
+                otherTags.append(tag)
+            }
+        }
+        
+        return (crystalTags, otherTags)
+    }
+    
+    static func getJobsOfTypes(jobs: [Job], tags: [JobTag], omittedJobs: [Job], meteorSelected: Bool) -> [Job] {
+        let (crystalTags, otherTags) = separateCrystalTags(tags: tags)
         return jobs.filter { job in
-            let jobNotInSelectedJobs = !selectedJobs.contains { selectedJob in
+            let jobNotInSelectedJobs = !omittedJobs.contains { selectedJob in
                 selectedJob.name == job.name
             }
             
-            let tagsDoMatch = tags.allSatisfy { tag in
-                job.tags.contains(tag)
-                || (meteorSelected && job.tags.contains(.all))
-            }
+            let hasOneOfRequiredCrystals = crystalTags.count > 0 ? crystalTags.reduce(false) { $0 || job.tags.contains($1)} : true
             
-            return jobNotInSelectedJobs && tagsDoMatch
+            let tagsDoMatch = otherTags.count > 0 ? otherTags.allSatisfy { tag in
+                job.tags.contains(tag)
+            } : true
+            
+            return jobNotInSelectedJobs &&
+            (hasOneOfRequiredCrystals && tagsDoMatch) ||
+            (meteorSelected && job.tags.contains(.all))
         }
     }
 }

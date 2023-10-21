@@ -22,6 +22,7 @@
 		83A14D462ADE1F500062F490 /* JobStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A14D452ADE1F500062F490 /* JobStatus.swift */; };
 		83A14D4B2ADE3CD60062F490 /* JobStatusService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A14D4A2ADE3CD60062F490 /* JobStatusService.swift */; };
 		83A14D4D2AE216270062F490 /* RunType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A14D4C2AE216270062F490 /* RunType.swift */; };
+		83E3B67C2AE34F4800A82FFA /* JobTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E3B67B2AE34F4800A82FFA /* JobTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		83A14D452ADE1F500062F490 /* JobStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobStatus.swift; sourceTree = "<group>"; };
 		83A14D4A2ADE3CD60062F490 /* JobStatusService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobStatusService.swift; sourceTree = "<group>"; };
 		83A14D4C2AE216270062F490 /* RunType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunType.swift; sourceTree = "<group>"; };
+		83E3B67B2AE34F4800A82FFA /* JobTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 		83A14AFE2ADAEE960062F490 /* FourJobFiestaSwiftCoreTests */ = {
 			isa = PBXGroup;
 			children = (
+				83E3B67A2AE34EFD00A82FFA /* Util */,
 				83A14AFF2ADAEE960062F490 /* FourJobFiestaSwiftCoreTests.swift */,
 			);
 			path = FourJobFiestaSwiftCoreTests;
@@ -185,6 +188,14 @@
 				83A14D4A2ADE3CD60062F490 /* JobStatusService.swift */,
 			);
 			path = Observables;
+			sourceTree = "<group>";
+		};
+		83E3B67A2AE34EFD00A82FFA /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				83E3B67B2AE34F4800A82FFA /* JobTests.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83A14B002ADAEE960062F490 /* FourJobFiestaSwiftCoreTests.swift in Sources */,
+				83E3B67C2AE34F4800A82FFA /* JobTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

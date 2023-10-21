@@ -110,7 +110,7 @@ class JobStatusService: ObservableObject {
     }
     
     private func rollJob(tags: [JobTag]) -> Job {
-        let filteredJobs = Jobs.getJobsOfTypes(jobs: jobs, tags: tags, selectedJobs: isDuplicatesAllowed ? [] : selectedJobs, meteorSelected: false)
+        let filteredJobs = Jobs.getJobsOfTypes(jobs: jobs, tags: tags, omittedJobs: isDuplicatesAllowed ? [] : selectedJobs, meteorSelected: false)
         guard let randomJob = filteredJobs.randomElement() else {
             return Job(name: "Freelancer")
         }

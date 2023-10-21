@@ -82,5 +82,99 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "984C7D2A-743C-4801-A856-D332D50BD492"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FourJobFiestaSwiftCoreTests/Model/JobTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "test_jobTags()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "35C04706-A1A0-4BFA-8F77-2BB6FC227471"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FourJobFiestaSwiftCoreTests/Util/JobTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "JobTests"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "35C04706-A1A0-4BFA-8F77-2BB6FC227471 - 82d7b62a649c63e1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FourJobFiestaSwiftCoreTests.JobTests.allJobs.getter : Swift.Array&lt;FourJobFiestaSwiftCore.Job&gt;"
+                  moduleName = "FourJobFiestaSwiftCoreTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joncundiff/Dev/swift/FourJobFiestaSwiftCore/FourJobFiestaSwiftCoreTests/Util/JobTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "35C04706-A1A0-4BFA-8F77-2BB6FC227471 - a9efac8050505f50"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FourJobFiestaSwiftCoreTests.JobTests.init(invocation: Swift.Optional&lt;__C.NSInvocation&gt;) -&gt; FourJobFiestaSwiftCoreTests.JobTests"
+                  moduleName = "FourJobFiestaSwiftCoreTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joncundiff/Dev/swift/FourJobFiestaSwiftCore/FourJobFiestaSwiftCoreTests/Util/JobTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "35C04706-A1A0-4BFA-8F77-2BB6FC227471 - 4daa0926bfd072b0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FourJobFiestaSwiftCoreTests.JobTests.init(selector: ObjectiveC.Selector) -&gt; FourJobFiestaSwiftCoreTests.JobTests"
+                  moduleName = "FourJobFiestaSwiftCoreTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joncundiff/Dev/swift/FourJobFiestaSwiftCore/FourJobFiestaSwiftCoreTests/Util/JobTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "35C04706-A1A0-4BFA-8F77-2BB6FC227471 - 11fab8c0802fa0c3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FourJobFiestaSwiftCoreTests.JobTests.init() -&gt; FourJobFiestaSwiftCoreTests.JobTests"
+                  moduleName = "FourJobFiestaSwiftCoreTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joncundiff/Dev/swift/FourJobFiestaSwiftCore/FourJobFiestaSwiftCoreTests/Util/JobTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
