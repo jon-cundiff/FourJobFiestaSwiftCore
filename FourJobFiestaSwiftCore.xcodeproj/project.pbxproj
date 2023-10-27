@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		837322A32AEB452A00B3B8CC /* JobStatusServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837322A22AEB452A00B3B8CC /* JobStatusServiceTests.swift */; };
 		83A14AEE2ADAEE940062F490 /* FourJobFiestaSwiftCoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A14AED2ADAEE940062F490 /* FourJobFiestaSwiftCoreApp.swift */; };
 		83A14AF02ADAEE940062F490 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A14AEF2ADAEE940062F490 /* ContentView.swift */; };
 		83A14AF22ADAEE960062F490 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83A14AF12ADAEE960062F490 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		837322A22AEB452A00B3B8CC /* JobStatusServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JobStatusServiceTests.swift; path = FourJobFiestaSwiftCoreTests/JobStatusServiceTests.swift; sourceTree = SOURCE_ROOT; };
 		83A14AEA2ADAEE940062F490 /* FourJobFiestaSwiftCore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FourJobFiestaSwiftCore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A14AED2ADAEE940062F490 /* FourJobFiestaSwiftCoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourJobFiestaSwiftCoreApp.swift; sourceTree = "<group>"; };
 		83A14AEF2ADAEE940062F490 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				83E3B67B2AE34F4800A82FFA /* JobTests.swift */,
+				837322A22AEB452A00B3B8CC /* JobStatusServiceTests.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83A14B002ADAEE960062F490 /* FourJobFiestaSwiftCoreTests.swift in Sources */,
+				837322A32AEB452A00B3B8CC /* JobStatusServiceTests.swift in Sources */,
 				83E3B67C2AE34F4800A82FFA /* JobTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

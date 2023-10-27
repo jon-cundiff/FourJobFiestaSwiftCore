@@ -23,11 +23,21 @@ class JobStatusService: ObservableObject {
     @Published var runType: RunType = .regular
     @Published var isDuplicatesAllowed: Bool = false
     
-    private var jobs = Jobs.buildJobs()
+    private var jobs: [Job]
     private var selectedJobs: [Job] = []
     
-    init(jobStatuses: [JobStatus]?) {
-        self.jobStatuses = jobStatuses ?? getInitialStatuses()
+    init(jobStatuses: [JobStatus] = getInitialStatuses(), jobs: [Job] = Jobs.buildJobs()) {
+        self.jobStatuses = jobStatuses
+        self.jobs = jobs
+        jobStatuses.forEach {jobStatus in
+            if let job = jobStatus.job {
+                selectedJobs.append(job)
+            }
+        }
+    }
+    
+    func toggleDuplicatesAllowed() {
+        self.isDuplicatesAllowed = !isDuplicatesAllowed
     }
     
     func handleTouch(touchId: UUID) {
@@ -39,7 +49,7 @@ class JobStatusService: ObservableObject {
         }
         
         var newJobStatuses = self.jobStatuses
-        var processTags = getProcessTags(crystal: newJobStatuses[jobStatusIndex].crystal)
+        let processTags = getProcessTags(crystal: newJobStatuses[jobStatusIndex].crystal)
         
         if (newJobStatuses[jobStatusIndex].job == nil) {
             newJobStatuses[jobStatusIndex].job = rollJob(tags: processTags)

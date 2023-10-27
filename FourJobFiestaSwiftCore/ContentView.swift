@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var jobStatusService = JobStatusService(jobStatuses: nil)
+    @StateObject private var jobStatusService = JobStatusService()
     
     var body: some View {
         HStack {
@@ -23,10 +23,6 @@ struct ContentView: View {
                 }
                 
             }
-        
-//            JobView(crystal: .wind, job: "Black Mage", character: "Bartz").onTapGesture {
-//                print("HIIII")
-//            }
         }
     }
 }
