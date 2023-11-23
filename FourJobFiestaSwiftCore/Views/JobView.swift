@@ -13,7 +13,7 @@ struct JobView: View {
     let character: String?
     var body: some View {
         ZStackLayout (alignment: Alignment(horizontal: .center, vertical: .bottom)) {
-            Image(getImage())
+            Image(getCrystalImage())
             if let jobString = job {
                 VStack () {
                     if let charString = character {
@@ -33,7 +33,7 @@ struct JobView: View {
         
     }
     
-    func getImage() -> ImageResource {
+    func getCrystalImage() -> ImageResource {
         return switch crystal {
         case .wind:
                 .Crystals.wind

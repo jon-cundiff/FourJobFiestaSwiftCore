@@ -22,7 +22,7 @@ class Jobs {
             Job(name: "Red Mage", tags: [.water, .team750, .classic, .onion, .onion2]),
             Job(name: "Time Mage", tags: [.water, .team750]),
             Job(name: "Summoner", tags: [.water, .team750, .onion, .onion3]),
-            Job(name: "Beserker", tags: [.water, .teamNo750]),
+            Job(name: "Berserker", tags: [.water, .teamNo750]),
             Job(name: "Mystic Knight", tags: [.water, .teamNo750]),
             
             Job(name: "Beastmaster", tags: [.fire, .teamNo750]),

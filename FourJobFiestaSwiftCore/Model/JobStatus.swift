@@ -11,5 +11,6 @@ struct JobStatus: Identifiable {
     var id: UUID = UUID()
     var crystal: Crystal
     var job: Job?
-    var charIndex: Int?
+    var charIndex: Int = 0
+    var charName: String = "Bartz"
 }

@@ -16,9 +16,8 @@ struct ContentView: View {
                 JobView(
                     crystal: jobStatus.crystal,
                     job: jobStatus.job?.name,
-                    character: nil
+                    character: jobStatus.charName
                 ).onTapGesture {
-                    print(jobStatus.id)
                     jobStatusService.handleTouch(touchId: jobStatus.id)
                 }
                 
